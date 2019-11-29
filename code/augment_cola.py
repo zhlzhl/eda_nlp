@@ -35,8 +35,8 @@ def sr_augment(intput_file, output_file, alpha, num_aug=9):
 # main function
 if __name__ == "__main__":
     # for testing purpose
-    input_file = '/home/user/git/nlp_data/glue/data/CoLA/train.tsv'
-    output_file = '/home/user/git/nlp_data/glue/data/CoLA/train_sr.tsv'
+    input_file = '/home/user/git/nlp_data/glue/data/CoLA_backup/train.tsv'
+    output_file = '/home/user/git/nlp_data/glue/data/CoLA/train.tsv'
 
     # augment input file using synonym replacement
-    sr_augment(input_file, output_file, alpha=0.2, num_aug=3)
+    sr_augment(input_file, output_file, alpha=0.1, num_aug=6)
